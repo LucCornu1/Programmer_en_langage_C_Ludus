@@ -1,0 +1,6 @@
+#Fichier Gitignore
+#Prog_en_C_LC_V1-0/bin/Debug/Prog_en_C_LC_V1-0.exe
+#Prog_en_C_LC_V1-0/obj/Debug/main.o
+
+*.exe
+*.o
