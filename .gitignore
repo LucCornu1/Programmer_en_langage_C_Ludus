@@ -6,3 +6,6 @@
 *.o
 *.depend
 *.layout
+*.txt
+*.docx
+*.cbp
