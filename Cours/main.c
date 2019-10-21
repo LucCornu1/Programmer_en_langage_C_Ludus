@@ -4,63 +4,49 @@
 #include <math.h>
 
 #define NFOIS 5 //Constante
+#define TAILLE 10
 #define PI 3.14
 #define Nom "Cornu"
 #define CAR "x"
 
 int main()
 {
-    /*const int cnT=10; //Constance locale au main
+    int a=0,b=0,c=0,d=0;
 
-    volatile int nVolN;
+    //condition
 
-    static int nStatB;*/
+    if(a==b){
+        printf("Ils sont egaux\n");
+    }else{
+        printf("Ils ne sont pas egaux\n");
+    }
 
-    //Integer
-    short int nA; //short sn
-    int nB;
-    long int nC; //long ln
+    //condition avec opérateur logique
 
-    printf("Taille de nA : %d\n",sizeof(nA));
-    printf("Taille de nB : %d\n",sizeof(nB));
-    printf("Taille de nC : %d\n\n",sizeof(nC));
+    if((a==b) && (a==c)){
+        printf("Ils sont tous egaux\n");
+    }else{
+        printf("Il ne sont pas tous egaux\n");
+    }
 
-    //Real
-    float fltReelSimple;
-    double dblReelDouble;
+    if((a==b) || (a==c)){
+        printf("Ils sont egaux\n");
+    }else{
+        printf("Ils ne sont pas egaux\n");
+    }
 
-    printf("Taille de fltReelSimple : %d\n",sizeof(fltReelSimple));
-    printf("Taille de dblReelDouble : %d\n\n",sizeof(dblReelDouble));
+    if((a==b) || (a==c)){
+        printf("Ils sont egaux\n");
+    }else if((a==c) && (a!=d)){
+        printf("OUI\n");
+    }
 
-    //Caractères
-    char cCaractere;
+    //Boucle
+    int i=0;
 
-    printf("Taille de cCaraactere : %d\n\n",sizeof(cCaractere));
+    for(i=0;i<TAILLE;i++){
+        printf("OUI\n");
+    }
 
-    //Testet define
-    printf("Taille de NFOIS : %d %d\n", sizeof(NFOIS), NFOIS);
-    printf("Taille de PI : %d %f\n", sizeof(PI), PI);
-    printf("Taille de Nom : %d %s\n", sizeof(Nom), Nom);
-    printf("Taille de CAR : %d %c\n\n", sizeof(CAR), CAR);
-
-    //Opérateurs
-    int nI=0;
-    ++nI; //pre-incrementation
-    nI++; //post-incrementation
-
-    //% modulo
-    /* /division */
-
-    //Cast
-    long double ldblLongDouble=105.16841655189;
-    printf("Valeur de ldblLongDouble : %lf\n\n", (double)ldblLongDouble);
-
-    //Opérateurs relationnels
-    // > , < , >= , <= , == , !=
-
-    //Opérateurs logiques
-    // & , && , | , || , !
-
-    //Factorisation opérateurs
-    // += , -= , %= , /= , *=
+    return 0;
 }
