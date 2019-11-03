@@ -1,0 +1,6 @@
+*.exe
+*.o
+*.depend
+*.layout
+Cours2/Cours2.cbp
+Cours/Cours.cbp
